@@ -37,7 +37,7 @@ fn MetabaseComponent() -> impl IntoView {
         spawn_local(async move {
             let client = Client::new();
             let res = client
-                .post("http://httpbin.org/post")
+                .post("https://httpbin.org/post")
                 .body(value)
                 .send()
                 .await
